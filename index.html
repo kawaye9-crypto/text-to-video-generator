@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Text-to-Video Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Text-to-Video Generator</h1>
+
+    <textarea id="textPrompt" placeholder="Enter your prompt..."></textarea>
+    
+    <button id="generateBtn">Generate Video</button>
+
+    <div id="progressContainer" class="hidden">
+      <div id="progressBar"></div>
+      <span id="progressPct">0%</span>
+    </div>
+
+    <div id="previewPane" class="hidden">
+      <h2>Video Preview</h2>
+      <video id="videoPreview" controls></video>
+    </div>
+
+    <a id="downloadBtn" class="button hidden">Download Video</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

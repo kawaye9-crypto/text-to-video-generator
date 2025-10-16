@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #1a1a1a, #001f3f);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 102, 204, 0.5);
+  text-align: center;
+}
+
+h1 {
+  color: #00aaff;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+  background-color: #101010;
+  color: #ffffff;
+  resize: none;
+}
+
+button, .button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: #005fa3;
+}
+
+.hidden {
+  display: none;
+}
+
+#progressContainer {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #111111;
+  border: 1px solid #003366;
+  border-radius: 6px;
+  position: relative;
+  height: 24px;
+}
+
+#progressBar {
+  height: 100%;
+  width: 0;
+  background-color: #00aaff;
+  border-radius: 6px;
+  transition: width 0.2s ease;
+}
+
+#progressPct {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+#previewPane {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #111111;
+  border: 2px solid #003366;
+  border-radius: 10px;
+}
+
+video {
+  width: 100%;
+  max-height: 400px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: black;
+}
